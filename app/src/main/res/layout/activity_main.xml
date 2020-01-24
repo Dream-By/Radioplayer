@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:autofit="http://schemas.android.com/tools"
+              android:id="@+id/activity_radio_player"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:background="@drawable/lay_fm"
+              android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+                android:id="@+id/button"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:onClick="didTapButton"
+                android:text="play"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/playbutton"
+                android:textColor="@color/colorSylver"
+                android:textSize="10sp"/>
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="440dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorSylver"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/trackView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="400dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="28sp"
+                app:autoSizeMinTextSize="14sp"
+                app:autoSizeTextType="uniform"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/logo_white_2"
+                android:layout_gravity="bottom"
+                android:id="@+id/imageView"/>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
